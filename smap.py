@@ -1,23 +1,35 @@
 '''
 Created on 9 Oct 2018
+Updated 10 Feb 2021
 
 @author: thomasgumbricht
 '''
-import urllib.request
-from html.parser import HTMLParser
+
+# Standard library imports
+
 import os
+
+import urllib.request
+
 from sys import exit
+
 from shutil import move
+
+from html.parser import HTMLParser
+
+# Package application imports
+
 import support.karttur_dt as mj_dt
 
 from params import Composition, LayerCommon, RegionLayer, VectorLayer, RasterLayer
-#import geoimagine.smap.hdf5_2_geotiff as hdf5_2_geotiff
+
 from smap import hdf5_2_geotiff 
 
 class SmapComposition:
     '''
     class for sentinel compositions
     '''
+    
     def __init__(self, compD):  
         for key in compD:
             if '_' in compD[key]:
