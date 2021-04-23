@@ -1,0 +1,86 @@
+{
+  "process": [
+    {
+      "processid": "tableinsert",
+      "overwrite": false,
+      "parameters": {
+        "db": "karttur",
+        "schema": "ease2s",
+        "table": "products",
+        "command": {
+          "columns": [
+            "hdffolder",
+            "hdfgrid",
+            "fileext",
+            "title",
+            "label",
+            "region",
+            "epsg",
+            "retrieve",
+            "source",
+            "product",
+            "content",
+            "layerid",
+            "prefix",
+            "suffix",
+            "compid",
+            "measure",
+            "dataunit",
+            "scalefac",
+            "offsetadd",
+            "cellnull",
+            "celltype"
+          ],
+          "values": [
+            [
+              "MOD_Grid_Seaice_4km_South",
+              "Sea_Ice_by_Reflectance_SP",
+              "tif",
+              "Sea Ice by Reflectance SP",
+              "Sea Ice by Reflectance SP",
+              "global",
+              6932,
+              "Y",
+              "modis",
+              "MOD29E1D",
+              "seaice",
+              "seaice",
+              "seaice",
+              "006",
+              "seaice_seaice",
+              "R",
+              "index",
+              "1",
+              "0",
+              "-1",
+              "BYTE"
+            ],
+            [
+              "MOD_Grid_Seaice_4km_South",
+              "Ice_Surface_Temperature_SP",
+              "tif",
+              "Ice Surface Temperature SP",
+              "Ice Surface Temperature SP",
+              "global",
+              6932,
+              "Y",
+              "modis",
+              "MOD29E1D",
+              "seaice",
+              "icetemp",
+              "icetemp",
+              "006",
+              "seaice_icetemp",
+              "R",
+              "index",
+              "1",
+              "0",
+              "-1",
+              "UINT16"
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}
